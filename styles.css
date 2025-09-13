@@ -1,0 +1,268 @@
+/* styles.css */
+
+body {
+    font-family: 'Open Sans', sans-serif; /* A clean, readable font */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text */
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.hero {
+    background-color: #e0f7fa; /* Very light cyan background for hero section */
+    color: #006064; /* Dark cyan text for hero section */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.hero .subtitle {
+    font-size: 1.2em;
+    color: #26a69a; /* Slightly lighter cyan for subtitle */
+    margin-bottom: 1em;
+}
+
+.hero .contact-info a {
+    color: #006064;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.hero .contact-info a:hover {
+    text-decoration: underline;
+}
+
+.separator {
+    margin: 0 5px;
+    color: #26a69a; /* Separator color matching subtitle */
+}
+
+
+section {
+    padding: 60px 0;
+    background-color: #fff; /* White background for sections */
+    border-bottom: 1px solid #eee; /* Light border to separate sections */
+}
+
+section:last-of-type {
+    border-bottom: none; /* No border for the last section */
+}
+
+section h2 {
+    font-size: 2em;
+    color: #004d40; /* Darker teal for section titles */
+    margin-bottom: 1em;
+    text-align: center;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #b2dfdb; /* Teal border under section titles */
+    display: inline-block; /* To make border width adjust to text */
+}
+
+section h2:before,
+section h2:after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    border-bottom: 8px solid #80cbc4; /* Lighter teal border accent */
+    width: 20px;
+}
+
+section h2:before {
+    left: -30px;
+}
+
+section h2:after {
+    right: -30px;
+}
+
+
+.about-me .container p,
+.work-experience .container p,
+.projects-section .container p,
+.certifications-section .container ul,
+.technical-skills .container ul,
+.education-section .container p,
+.education-section .container .degree {
+    color: #555; /* Medium grey for body text in sections */
+}
+
+
+.experience-item,
+.project-item,
+.education-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Very light grey for item backgrounds */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+}
+
+.experience-item h3,
+.project-item h3,
+.education-item h3 {
+    color: #00838f; /* Teal for item titles */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.experience-item .organization,
+.project-item p a,
+.education-item .degree,
+.education-item .date {
+    font-style: italic;
+    color: #777; /* Light grey italic text */
+    display: block; /* To put each on a new line */
+    margin-bottom: 0.5em;
+}
+
+.project-item p a {
+    text-decoration: none;
+    color: #00838f;
+}
+
+.project-item p a:hover {
+    text-decoration: underline;
+}
+
+
+.skills-category {
+    margin-bottom: 20px;
+}
+
+.skills-category h3 {
+    color: #00695c; /* Darker teal for skill category titles */
+    margin-bottom: 0.5em;
+    border-bottom: 2px dotted #b2dfdb; /* Dotted line under skill category titles */
+    padding-bottom: 5px;
+}
+
+.skills-category ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-category ul li {
+    background-color: #e0f7fa; /* Light cyan for skill list items */
+    color: #004d40; /* Dark teal for skill text */
+    margin: 5px 10px 5px 0;
+    padding: 8px 15px;
+    border-radius: 20px; /* Rounded corners for skill items */
+    font-size: 0.9em;
+}
+
+.certifications-section ul,
+.technical-skills .container > ul {
+    list-style: none;
+    padding: 0;
+}
+
+.certifications-section ul li {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background-color: #f0f0f0; /* Very light grey for certification items */
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03); /* Subtle shadow for certification items */
+}
+
+
+.contact-footer {
+    background-color: #004d40; /* Dark teal footer background */
+    color: #fff; /* White text for footer */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-footer h2 {
+    color: #fff; /* White for footer title */
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid #80cbc4; /* Lighter teal border for footer title */
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.contact-footer p {
+    margin-bottom: 1em;
+    color: #b2dfdb; /* Light teal for footer paragraph */
+}
+
+.contact-footer .contact-info a {
+    color: #fff; /* White for footer links */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+
+.contact-footer .contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-footer .copyright {
+    margin-top: 2em;
+    font-size: 0.9em;
+    color: #80cbc4; /* Lighter teal for copyright text */
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero .subtitle {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    section h2 {
+        font-size: 1.7em;
+    }
+
+    .skills-category ul li {
+        margin: 5px;
+        padding: 6px 12px;
+        font-size: 0.85em;
+    }
+
+    .contact-footer {
+        padding: 30px 0;
+    }
+
+    .contact-footer h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-footer .contact-info a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+}
